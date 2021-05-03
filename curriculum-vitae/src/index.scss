@@ -1,0 +1,21 @@
+@import '../styles/texts';
+@import '../styles//colors';
+
+*, *:after, *:before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $font_principal;
+}
+
+
+.flex {
+    display: flex;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: $text_color;
+ }
+
+

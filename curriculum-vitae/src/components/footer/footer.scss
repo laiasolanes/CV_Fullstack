@@ -1,0 +1,87 @@
+@import '../../../styles/colors';
+
+.pre-footer {
+
+    flex-direction: column;
+    background: $color_principal;
+    padding: 20px 30px;
+
+
+    h4 {
+        color: #ffffff;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    .button {
+        margin: 15px 30px 15px 0;
+        text-transform: none;
+        padding: 15px;
+        width: 150px;
+    }
+
+}
+
+.footer {
+    padding: 50px 30px;
+    background: #171717;
+    color: #e0e0e0;
+    flex-direction: column;
+
+    .footer__title {
+        padding: 50px 0 20px 0;
+    }
+
+    .footer__data {
+        flex-direction: column;
+        
+
+        div {
+            border-top: 1px solid #4e4e4e;
+            padding: 30px 0;
+        }
+
+        .footer__direction {
+            margin-right: 30px;
+        }
+
+        .footer__phone {
+            margin-right: 30px;
+        }
+
+        .link--light {
+            color: #e0e0e0; 
+        }
+        .link--light:hover {
+            color: $color_principal; 
+        }
+    }
+
+}
+
+.copyright {
+    background: #000000;
+    color: #d4d4d4;
+    padding:  20px 30px;
+    font-size: 12px;
+
+}
+
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) { 
+    .footer {
+        .footer__data {
+            flex-direction: row;
+    
+        }
+    }
+
+    .pre-footer {
+        flex-direction: row;
+        width: 70%;
+        margin-bottom: -40px;
+        position: relative;
+
+    }
+}

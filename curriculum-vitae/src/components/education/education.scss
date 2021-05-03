@@ -1,0 +1,79 @@
+@import '../../../styles/colors';
+
+.education {
+    padding: 50px 30px;
+    flex-direction: column;
+    .title {
+        width: 25%;
+        padding: 0 30px 0 0;
+    }
+
+    h5 {
+        color: $color_principal;
+    }
+
+    .education__items {
+        flex-wrap: wrap;
+
+        .education__box {
+            flex-direction: column;
+            border-radius: 15px;
+            padding: 20px ;
+            box-sizing: border-box;
+            margin: 0 2.5% 2.5% 0;
+            width: 47.5%;
+            transition: all 600ms;
+
+            .year {
+                text-orientation: mixed;
+                writing-mode: vertical-rl; 
+                color: $color_principal;
+                margin: 0 0 0 -10px;
+            }
+
+            .course {
+                font-weight: 800;
+                margin: -5px 15px;
+                padding-right: 20%;
+            }
+
+            .education__text {
+                padding: 20px 0 0 0;
+            }
+
+        }
+
+        .education__box:hover {
+            box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+            background: $color_principal;
+
+            .year {
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .course {
+                color: #F5F4F4;
+            }
+        }
+
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) { 
+    .education {
+        flex-direction: row;
+
+        .education__items {
+            width:75%;
+  
+            .education__box {
+                .course {
+                    padding-right: 40%;
+                }
+            }
+        }
+
+    }
+}

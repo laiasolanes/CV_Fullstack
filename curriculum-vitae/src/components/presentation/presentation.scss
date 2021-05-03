@@ -1,0 +1,49 @@
+@import '../../../styles/colors';
+
+.presentation {
+    padding: 150px 30px 80px 30px;
+    flex-direction: column;
+    background: #f5f4f4;
+    .presentation__image {
+
+        padding: 20px;
+        img {
+            margin: auto;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+     h2 {
+        color: $color_principal;
+        margin-bottom: 30px;
+    }
+    .button {
+        margin: 30px 30px 15px 0;
+        text-transform: capitalize;
+        padding: 15px;
+    }
+
+    .button--color {
+        background: $color_principal;
+        color: #ffffff;
+    }
+    .button--color:hover {
+        background: #000000;
+        color: #ffffff;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) { 
+    .presentation {
+        flex-direction: row-reverse;
+            .presentation__image {
+                width: 50%;
+            }
+            .presentation__text {
+                width: 50%;
+            }
+     }
+}

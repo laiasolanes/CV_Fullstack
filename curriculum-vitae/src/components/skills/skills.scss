@@ -1,0 +1,94 @@
+@import '../../../styles/colors';
+
+.skills {
+  padding: 50px 30px 0 30px;
+  flex-direction: column;
+
+  h5 {
+    color: $color_principal;
+  }
+
+  .skills__views {
+    flex-wrap: wrap;
+
+    .skills__item {
+      width: 25%;
+      padding-right:5%;
+      margin-bottom: 30px;;
+    }
+
+    .skill__subtitle {
+      font-weight: 800;
+      margin: 50px 0 20px 0;
+    }
+  }
+
+  /* CIRCLE SKILLS */
+  .flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 33%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 75%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  .circular-chart.principal .circle {
+    stroke: $color_principal;
+  }
+ 
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+
+}
+
+.skillsImage {
+  width: 90%;
+  margin: 0 5% 5% 5%;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) { 
+.skills {
+  flex-direction: row;
+
+  .skills__title {
+    width: 25%;
+  }
+
+  .skills__views {
+    width: 75%;
+  }
+}
+}

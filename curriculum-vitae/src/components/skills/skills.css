@@ -1,0 +1,110 @@
+.skills {
+  padding: 50px 30px 0 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* CIRCLE SKILLS */
+}
+
+.skills h5 {
+  color: #30acbc;
+}
+
+.skills .skills__views {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skills__views .skills__item {
+  width: 25%;
+  padding-right: 5%;
+  margin-bottom: 30px;
+}
+
+.skills .skills__views .skill__subtitle {
+  font-weight: 800;
+  margin: 50px 0 20px 0;
+}
+
+.skills .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.skills .single-chart {
+  width: 33%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skills .circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 75%;
+  max-height: 250px;
+}
+
+.skills .circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.skills .circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  -webkit-animation: progress 1s ease-out forwards;
+          animation: progress 1s ease-out forwards;
+}
+
+.skills .circular-chart.principal .circle {
+  stroke: #30acbc;
+}
+
+.skills .percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.skillsImage {
+  width: 90%;
+  margin: 0 5% 5% 5%;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) {
+  .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skills .skills__title {
+    width: 25%;
+  }
+  .skills .skills__views {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=skills.css.map */
