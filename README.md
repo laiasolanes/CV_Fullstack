@@ -11,7 +11,7 @@ Presentació del currículum personal practicant amb les tècniques:
 _Febrer 2021_
 
 
-![Imatge currículum](https://firebasestorage.googleapis.com/v0/b/mainaprops.appspot.com/o/screens_mainaprops.png?alt=media&token=e3265bc5-e718-4548-9d2e-5e4f350c90d3)
+![Imatge currículum](https://github.com/laiasolanes/CV_Fullstack/blob/main/FireShot%20Capture%20068%20-%20Curr%C3%ADculum%20Vitae%20-%20localhost.png)
 
 
 ### Pre-requirements 📋
