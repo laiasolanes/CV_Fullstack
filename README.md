@@ -1,13 +1,14 @@
 # Currículum Vitae Fullstack
-> Realitzat durant la setena setmana de Bootcamp Full Stack de [Skylab Coders Academy](https://www.skylabcoders.com/ca).
 
-Presentació del currículum personal practicant amb les tècniques:
+Exercici per practicar les tècniques:
 - React
 - Redux
 - Mongoose
 - Postman
 - Axios
+Presentació del currículum personal
 
+> Realitzat durant la setena setmana de Bootcamp Full Stack de [Skylab Coders Academy](https://www.skylabcoders.com/ca).
 _Febrer 2021_
 
 
